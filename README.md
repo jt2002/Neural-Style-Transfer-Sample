@@ -1,7 +1,7 @@
 # Neural-Style-Transfer-Sample
+Compose an image using the style of another image
 
 ## Motivation
-- Compose an image using the style of another image
 - Employ 2 alternatives to compose an image
   - Use a module from TensorFlow Hub
   - Train a deep neural network
@@ -16,6 +16,8 @@
 ## Sample Data
 - Content image `person.jpeg`
 - Style image `monit.jpg`
+
+![Content Image](https://github.com/jt2002/Neural-Style-Transfer-Sample/tree/master/img/person.jpeg)
 
 ## Setup to Use the Module from TensorFow Hub
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
