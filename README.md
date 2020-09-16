@@ -15,14 +15,12 @@ Compose an image using the style of another image
 
 ## Sample Data
 - Content image `person.jpeg`
+
   <img src="./img/person.jpeg" alt="Content Image" width="200"/>
 
-  ![Content Image](./img/person.jpeg | width=100)
-
 - Style image `monet.jpg`
-  <img src="./img/monet.jpg" alt="Style Image" width="400"/>
 
-  ![Style Image](./img/monet.jpg?raw=true "Style Image")
+  <img src="./img/monet.jpg" alt="Style Image" width="400"/>
 
 ## Setup to Use the Module from TensorFow Hub
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
