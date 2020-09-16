@@ -41,8 +41,7 @@ Compose an image using the style of another image
 - The training took 196.4 seconds on MacBook Pro 2.3GHz 8-core i9
   - Training on GPU for at least 10 epochs and 100 steps per epoch is highly recommended
   
-- The model utilizes the pretrained image classification network VGG19
-- These layers are available 
+- The model utilizes the pretrained image classification network VGG19 where these layers are available 
 ```
 block1_conv1
 block1_conv2
@@ -69,8 +68,7 @@ block5_pool
 - The code `nst_train.py` sets `content_layers` to `block5_conv2`, and `style_layers` to `['block1_conv1','block2_conv1','block3_conv1','block4_conv1','block5_conv1']`
 - Experiment with other layers for `content_layers` and `style_layers` yields interesting images
 
-- The reference tutorial mentions that a lot of high frequency artifacts are created
-- It decreases them using an explicit regularization term on the high frequency components of the image by replacing `train_step` function with the followings:
+- The reference tutorial mentions that a lot of high frequency artifacts are created, and decreases them using an explicit regularization term on the high frequency components of the image by replacing `train_step` function with the followings:
 ```
 total_variation_weight=30
 @tf.function()
