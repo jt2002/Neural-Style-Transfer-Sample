@@ -20,13 +20,14 @@ Compose an image using the style of another image
 
 - Style image `monet.jpg`
 
-  <img src="./img/monet.jpg" alt="Style Image" width="400"/>
+  <img src="./img/monet.jpg" alt="Style Image" width="200"/>
 
 ## Setup to Use the Module from TensorFow Hub
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
 - Run the command `python nst_hub.py`
   - The output image `person_nst.jpg` will be created in the `img` folder
-    ![Out Image](./img/person_nst.jpg?raw=true "Out Image")
+
+    <img src="./img/person_nst.jpg" alt="Out Image" width="200"/>
 
 ## Setup to Train the Deep Neural Network
 
