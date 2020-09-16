@@ -22,19 +22,19 @@ Compose an image using the style of another image
 
   <img src="./img/monet.jpg" alt="Style Image" width="200"/>
 
-## Setup to Use the Module from TensorFow Hub
+## Option 1 - Setup to Use the Module from TensorFow Hub
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
 - Run the command `python nst_hub.py`
   - The output image `person_nst.jpg` will be created in the `img` folder
 
     <img src="./img/person_nst.jpg" alt="Out Image" width="200"/>
 
-## Setup to Train the Deep Neural Network
+## Option 2 - Setup to Train the Deep Neural Network
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
 - Run the command `python nst_train.py`
   - The output image `person_train_nst.jpg` will be created in the `img` folder
 
-    <img src="./img/person_train_nst.jpg" alt="Out Image" width="200"/>
+    <img src="./img/person_train_nst.jpg" alt="Out Train Image" width="200"/>
 
 #### Notes on Training Deep Neural Network
 - The image `person_train_nst.jpg` was trained for 3 epochs and 50 steps per epoch
@@ -68,6 +68,26 @@ block5_pool
 ```
 - The code `nst_train.py` sets `content_layers` to `block5_conv2`, and `style_layers` to `['block1_conv1','block2_conv1','block3_conv1','block4_conv1','block5_conv1']`
 - Experiment with other layers for `content_layers` and `style_layers` yields interesting images
+
+- The reference tutorial mentions that a lot of high frequency artifacts are created
+- It decreases them using an explicit regularization term on the high frequency components of the image by replacing `train_step` function with the followings:
+```
+total_variation_weight=30
+@tf.function()
+def train_step(image):
+  with tf.GradientTape() as tape:
+    outputs = extractor(image)
+    loss = style_content_loss(outputs)
+    loss += total_variation_weight*tf.image.total_variation(image)
+
+  grad = tape.gradient(loss, image)
+  opt.apply_gradients([(grad, image)])
+  image.assign(clip_0_1(image))
+```
+- The output image of this update:
+
+    <img src="./img/person_train_nst_var.jpg" alt="Out Train Var Image" width="200"/>
+
 
 ## References
 - The codes in this repository are adapted from [Neural Style Transfer tutorials](https://www.tensorflow.org/tutorials/generative/style_transfer)
