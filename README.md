@@ -15,6 +15,9 @@ Compose an image using the style of another image
 
 ## Sample Data
 - Content image `person.jpeg`
+
+<img src="./img/person.jpeg" alt="Content Image" width="100"/>
+
   ![Content Image](./img/person.jpeg | width=100)
 
 - Style image `monet.jpg`
