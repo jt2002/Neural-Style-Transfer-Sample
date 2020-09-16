@@ -148,6 +148,18 @@ def train_step(image):
     opt.apply_gradients([(grad, image)])
     image.assign(clip_0_1(image))
 
+# total_variation_weight=30
+# @tf.function()
+# def train_step(image):
+#   with tf.GradientTape() as tape:
+#     outputs = extractor(image)
+#     loss = style_content_loss(outputs)
+#     loss += total_variation_weight*tf.image.total_variation(image)
+#
+#   grad = tape.gradient(loss, image)
+#   opt.apply_gradients([(grad, image)])
+#   image.assign(clip_0_1(image))
+
 # Test training
 # train_step(image)
 # train_step(image)
