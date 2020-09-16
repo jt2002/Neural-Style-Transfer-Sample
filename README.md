@@ -15,7 +15,7 @@ Compose an image using the style of another image
 
 ## Sample Data
 - Content image `person.jpeg`
-  ![Content Image](./img/monet.jpg?raw=true "Content Image")
+  ![Content Image](./img/person.jpeg?raw=true "Content Image")
 
 - Style image `monet.jpg`
   ![Style Image](./img/monet.jpg?raw=true "Style Image")
