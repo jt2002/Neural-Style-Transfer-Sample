@@ -31,4 +31,6 @@ Compose an image using the style of another image
 
 ## Setup to Train the Deep Neural Network
 
-Ref: The codes in this repository are adapted from [Neural Style Transfer tutorials](https://www.tensorflow.org/tutorials/generative/style_transfer)
+Ref: 
+- The codes in this repository are adapted from [Neural Style Transfer tutorials](https://www.tensorflow.org/tutorials/generative/style_transfer)
+- The image `person.jpeg` was downloaded from [This person does not exist](https://thispersondoesnotexist.com/)
