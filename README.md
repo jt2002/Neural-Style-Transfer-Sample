@@ -15,13 +15,16 @@ Compose an image using the style of another image
 
 ## Sample Data
 - Content image `person.jpeg`
+  ![Content Image](./img/monet.jpg?raw=true "Content Image")
+
 - Style image `monet.jpg`
-![Style Image](./img/monet.jpg?raw=true "Style Image")
+  ![Style Image](./img/monet.jpg?raw=true "Style Image")
 
 ## Setup to Use the Module from TensorFow Hub
 - Clone repository: `git clone https://github.com/jt2002/Neural-Style-Transfer-Sample.git`
 - Run the command `python nst_hub.py`
   - The output image `person_nst.jpg` will be created in the `img` folder
+    ![Out Image](./img/person_nst.jpg?raw=true "Out Image")
 
 ## Setup to Train the Deep Neural Network
 
