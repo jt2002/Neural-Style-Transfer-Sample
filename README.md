@@ -86,6 +86,9 @@ def train_step(image):
 
     <img src="./img/person_train_nst_var.jpg" alt="Out Train Var Image" width="200"/>
 
+## Future Work
+- Integrate the NST codes with Tkinter to create a desktop app
+- Host an app on AWS/GCP for users to compose their own images
 
 ## References
 - Leon A. Gatys’ paper: [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
