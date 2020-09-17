@@ -88,6 +88,6 @@ def train_step(image):
 
 
 ## References
-- Leon A. Gatys’ paper: [A Neural Algorithm of Artistic Style] (https://arxiv.org/abs/1508.06576)
+- Leon A. Gatys’ paper: [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
 - The codes in this repository are adapted from [Neural Style Transfer tutorials](https://www.tensorflow.org/tutorials/generative/style_transfer)
 - The image `person.jpeg` was downloaded from [This person does not exist](https://thispersondoesnotexist.com/)
