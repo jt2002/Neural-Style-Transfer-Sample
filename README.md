@@ -2,7 +2,7 @@
 Compose an image using the style of another image
 
 ## Motivation
-- Employ 2 alternatives to compose an image
+- Employ 2 options to compose an image
   - Use a module from TensorFlow Hub
   - Train a deep neural network
 
